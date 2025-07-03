@@ -24,7 +24,7 @@ function App() {
       <ProjectsMain />
       <ContactMeMain />
       <Footermain />
-      <HelperSection />
+      {/* <HelperSection /> */}
     </main>
   );
 }
