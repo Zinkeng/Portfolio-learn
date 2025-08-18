@@ -4,15 +4,22 @@ import AllSkills from "./AllSkills";
 import AllSkillsSM from "./AllSkillsSM";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import SubSkills from "./SubSkills";
 
 function SkillsMain() {
   return (
-    <div id="skills">
-      <div className="max-w-[1200px] px-4 mx-auto min-h-[400px] relative overflow-hidden">
+    <div
+      id="skills relative"
+      style={{
+        paddingBottom: 240,
+      }}
+    >
+      <div className="max-w-[1200px] px-4 mx-auto min-h-[100px] relative overflow-hidden">
         <motion.div
           variants={fadeIn("down", 0.6)}
           initial="hidden"
           whileInView="show"
+          s
           viewport={{ once: false, amount: 0 }}
           className="h-full flex items-center justify-center"
         >
